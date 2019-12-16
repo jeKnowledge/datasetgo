@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  color: #5C55D5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0% 6%;
+  height: 150px;
+}
+
+div > a {
+  margin-right: 3vw;
+  font-size: 18px;
+  /*line-height: 21px;*/
+  letter-spacing: 0.05em;
+  font-variant: small-caps;
+}
+
+a:link {
+  text-decoration:none;
+}
+
+.buttoms > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navbar > img {
+  height: 40px;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 7vh;
+}
+
+.brand1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand1 > p {
+  padding-bottom: 15px;
+}
+
+.brand1 > .bottomsBrand  {
+  padding-top: 30px;
+}
+
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 90px;
+  /*line-height: 112px;*/
+}
+
+.subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 90px;
+  /*line-height: 112px;*/
+}
+
+
+.date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  /*line-height: 42px;*/
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-variant: small-caps;
+  /* Main/Text */
+  color: #575757;
+}
+
+.brand > img {
+  height: 600px;
+}
+
+.bottomsBrand{
+  padding-top: 3vh;
+}
+
+.bottomsBrand a:first-child{
+  border: 2px solid #5C55D5;
+}
+
+.bottomsBrand a:last-child{
+  border: 2px solid #5C55D5;
+  color: #5C55D5;
+  background-color: #FFFFFF;
+}
+
+.brand a {
+  background-color: #5C55D5;
+  color: #FFF;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.description {
+  background-image: url("../resources/background.png");
+  background-size: 1440px;
+  height: 124rem;
+  background-repeat: no-repeat;
+
+}
+
+.title-description {
+  color: #FFFFFF;
+  font-variant: small-caps;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  /*line-height: 42px;*/
+}
+
+.text-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  /*line-height: 21px;*/
+  color: #FFFFFF;
+}
+
+.info1 {
+  display: flex;
+  margin: 100px;
+  justify-content: space-around;
+  height: calc(100vw/3);
+  padding-top: 20rem;
+}
+
+.what {
+  display: flex;
+  align-items: flex-start;
+}
+
+.what-info {
+  width: 40vw;
+}
+
+/*.what-img {
+  width: 50vw;
+  background-color: grey;
+}*/
+
+.where {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: row-reverse;
+  /*justify-content: space-around;*/
+}
+
+.where-info {
+  width: 40vw;
+}
+
+/*.where-img {
+  width: 50vw;
+  background-color: grey;
+}*/
+
+.info2 {
+  margin: 100px;
+  height: 10vh;
+}
+
+.who > p {
+  margin-bottom: 15px;
+
+}
+
+.info3 {
+  display: flex;
+  justify-content: space-around;
+  height: 450px;
+}
+
+.infoJE {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: calc(1300px/3);
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 1250px){
+
+}
+
+.titleJE {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  /*line-height: 42px;*/
+}
+
+.descJE {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  /*line-height: 21px;*/
+
+  color: #323232;
+}
+
+.logoJE {
+  height: 170px;
+}
+
+.faq {
+  margin-left: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  /*line-height: 42px;*/
+  font-variant: small-caps;
+}
+
+.footer {
+  background-color: #5C55D5;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+}
+
+
+.contactJE {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactJE > p {
+  margin-right: 20px;
+}
+
+.title-footer {
+  color: #FFFFFF;
+  font-variant: small-caps;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  /*line-height: 21px;*/
+  margin-bottom: 11px;
+}
+
+.text-footer {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  /*line-height: 16px;*/
+  margin-bottom: 4px;
+}
+
+.logo-footer {
+  height: 25px;
+}
