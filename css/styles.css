@@ -113,7 +113,7 @@ a:link {
 
 .description {
   background-image: url("../resources/background.png");
-  background-size: 1440px;
+  background-size: cover;
   height: 124rem;
   background-repeat: no-repeat;
 
