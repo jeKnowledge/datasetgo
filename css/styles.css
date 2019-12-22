@@ -6,6 +6,10 @@
   color: #5C55D5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -16,7 +20,7 @@
 
 div > a {
   margin-right: 3vw;
-  font-size: 18px;
+  font-size: 21px;
   /*line-height: 21px;*/
   letter-spacing: 0.05em;
   font-variant: small-caps;
@@ -34,17 +38,17 @@ a:link {
 .buttoms a:last-child{
   background-color: #5C55D5;
   color: #FFF;
-  padding: 5px 25px;
+  padding: 5px 20px;
   border-radius: 20px;
 }
 
 .navbar > img {
-  height:35px;
+  height: 45px;
 }
 
 .brand {
   width: 100vw;
-  height: 500px;
+  height: 450px;
   display: flex;
   justify-content: space-around;
   padding-top: 7vh;
@@ -70,15 +74,15 @@ a:link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 95px;
   /*line-height: 112px;*/
 }
 
 .subtitle {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
+  font-weight: 500;
+  font-size: 95px;
   /*line-height: 112px;*/
 }
 
@@ -100,8 +104,9 @@ a:link {
 
 .brandImage {
   width:50%;
+  height: 550px;
   background-image: url("../resources/graphic.jpeg");
-  background-size: contain;
+  background-size: calc(100vw/3);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -121,10 +126,11 @@ a:link {
 }
 
 .brand a {
+  font-size: 20px;
   background-color: #5C55D5;
   color: #FFF;
-  padding: 5px 20px;
-  border-radius: 20px;
+  padding: 7px 40px;
+  border-radius: 30px;
 }
 
 .description {
@@ -154,17 +160,26 @@ a:link {
   color: #FFFFFF;
 }
 
+.info0 {
+  display: flex;
+  margin: 100px;
+  align-items: flex-end;
+  height: calc(100vh/3);
+  padding-top: 20rem;
+}
+
 .info1 {
   display: flex;
   margin: 100px;
   justify-content: space-around;
-  height: calc(100vw/3);
-  padding-top: 20rem;
+  align-items: flex-end;
+  height: calc(100vh/3);
 }
 
 .what {
   display: flex;
-  align-items: flex-start;
+  justify-content: flex-end;
+
 }
 
 .what-info {
@@ -176,15 +191,25 @@ a:link {
   background-color: grey;
 }*/
 
+
 .where {
   display: flex;
-  align-items: flex-end;
-  flex-flow: row-reverse;
-  /*justify-content: space-around;*/
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+  align-content: space-between;
+  width: 100%;
 }
 
 .where-info {
+  display: flex;
+  flex-flow: column;
   width: 40vw;
+}
+
+#map {
+  width:500px;
+  height:250px;
 }
 
 /*.where-img {
@@ -247,13 +272,13 @@ a:link {
 }
 
 .faq {
-  margin-left: 200px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   /*line-height: 42px;*/
   font-variant: small-caps;
+  margin-bottom: 50px;
 }
 
 .footer {
@@ -297,4 +322,37 @@ a:link {
 
 .logo-footer {
   height: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .brandImage {
+    display: none;
+  }
+
+  .brand1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .info2 {
+    height: 6vh;
+  }
+
+  .info3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+  }
+
+
 }

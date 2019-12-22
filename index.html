@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Data Set Go</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/faq.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -36,7 +37,7 @@
     </section>
 
     <section class="description">
-      <div class="info1">
+      <div class="info0">
         <div class="what" id="what">
           <div class="what-info">
             <p class="title-description">what is this?<p>
@@ -46,13 +47,34 @@
           <div class="what-img">
           </div>
         </div>
+      </div>
+      <div class="info1">
         <div class="where" id="where">
+          <div id="map">
+            <script>
+                var map;
+                function initMap(){
+
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: new google.maps.LatLng(40.185937, -8.415614,17),
+                        zoom: 13,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    });
+
+                    var infoWindow = new google.maps.InfoWindow();
+
+                    var marker;
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(40.185937, -8.415614,17),
+                        map: map
+                    });
+                }
+              </script>
+          </div>
           <div class="where-info">
             <p class="title-description">when & where?<p>
-            <p class="text-description">This hackathon is happening on 12th, 13th and 14th of February and it takes place at Department of Computer Engineering, University of Coimbra.<p>
+            <p class="text-description">This hackathon is happening on 25th and 26th of April and it takes place at Department of Computer Engineering, University of Coimbra.<p>
             <p class="text-description">A place that has ideal conditions for the dynamization of such a diverse event organized through various rooms, auditoriums and social spaces, to work and socialize throughout the event.<p>
-          </div>
-          <div class="where-img">
           </div>
         </div>
       </div>
@@ -77,8 +99,25 @@
     </section>
 
     <section class="questions" id="questions">
-      <p class="faq">faq</p>
+      <div class="container">
+        <p class="faq">faq</p>
+        <div class="accordion">
+          <div class="accordion-item">
+            <a>who?</a>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a>where?</a>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
 
     <section class="footer">
       <div class="contacts">
@@ -104,5 +143,8 @@
         <p class="title-footer">collaborating with</p>
       </div>
     </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrc4kHDhi7GOYb5IBKUn1mrj6MsX85eNg&callback=initMap" async defer></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
