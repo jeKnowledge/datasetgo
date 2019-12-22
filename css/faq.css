@@ -36,7 +36,7 @@
 }
 
 .content > p {
-  z-index: 100;
+  color: #FFFFFF;
 }
 
 .accordion .content.active {
