@@ -3,7 +3,6 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  color: #5C55D5;
 }
 
 html {
@@ -24,6 +23,7 @@ div > a {
   /*line-height: 21px;*/
   letter-spacing: 0.05em;
   font-variant: small-caps;
+  color: #5C55D5;
 }
 
 a:link {
@@ -75,6 +75,7 @@ a:link {
   font-style: normal;
   font-weight: 700;
   font-size: 95px;
+  color: #5C55D5;
   /*line-height: 112px;*/
 }
 
@@ -83,6 +84,7 @@ a:link {
   font-style: normal;
   font-weight: 500;
   font-size: 95px;
+  color: #5C55D5;
   /*line-height: 112px;*/
 }
 
@@ -147,7 +149,7 @@ a:link {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 50px;
   /*line-height: 42px;*/
 }
 
@@ -156,6 +158,7 @@ a:link {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
+  font-weight: 300;
   /*line-height: 21px;*/
   color: #FFFFFF;
 }
@@ -164,7 +167,7 @@ a:link {
   display: flex;
   margin: 100px;
   align-items: flex-end;
-  height: calc(100vh/3);
+  height: calc(100vh/5);
   padding-top: 20rem;
 }
 
@@ -179,11 +182,14 @@ a:link {
 .what {
   display: flex;
   justify-content: flex-end;
-
 }
 
 .what-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 40vw;
+  height: 30vh;
 }
 
 /*.what-img {
@@ -203,12 +209,14 @@ a:link {
 
 .where-info {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  justify-content: space-around;
   width: 40vw;
+  height: 30vh;
 }
 
 #map {
-  width:500px;
+  width:550px;
   height:250px;
 }
 
@@ -254,6 +262,7 @@ a:link {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  color: #5C55D5;
   /*line-height: 42px;*/
 }
 
@@ -276,6 +285,7 @@ a:link {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  color: #5C55D5;
   /*line-height: 42px;*/
   font-variant: small-caps;
   margin-bottom: 50px;
@@ -322,6 +332,11 @@ a:link {
 
 .logo-footer {
   height: 25px;
+}
+
+.bold {
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 700px) {
