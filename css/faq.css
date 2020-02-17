@@ -1,7 +1,5 @@
-.container {
-  margin: 0 auto;
-  padding: 4rem;
-  width:calc(100vw/1.5);
+.accordion {
+  margin: 0 15vw;
 }
 
 .accordion a {

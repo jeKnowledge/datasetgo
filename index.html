@@ -2,14 +2,43 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <title>Data Set Go</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <section class="navbar">
+      <!--
+        <nav class="navigation" role="navigation">
+          <div id="menuToggle">
+            <input id="ola" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <ul class="accordion">
+                <a>apply</a>
+                <a href="#what">what</a>
+                <a href="#where">where</a>
+                <a href="#where">when</a>
+                <a href="#who">who</a>
+                <a href="#questions">faq</a>
+              </ul>
+              <div class="footer-nav">
+                <div class="made-by-menu">
+                    <p class="title-footer">made by</p>
+                    <img class="logo-footer" src="resources/logoJeK.svg">
+                    <img class="logo-footer" src="resources/logoJest.svg">
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>-->
       <img class="logo" src="resources/logo.svg">
       <div class="buttoms">
         <a href="#what">what</a>
@@ -23,34 +52,36 @@
 
     <section class="brand">
       <div class="brand1">
-        <p class="title">Data Science</p>
-        <p class="subtitle">Hackathon</p>
-        <p class="date">25 - 26 APRIL</p>
+        <img class="brand1Image" src="resources/logo.svg">
+        <div class="titless">
+          <p class="title">Data Science</p>
+          <p class="subtitle">Hackathon</p>
+          <p class="date">25 - 26 APRIL</p>
+        </div>
         <div class="bottomsBrand">
           <a>apply now</a>
           <a>learn more</a>
         </div>
       </div>
-      <div class="brandImage">
+      <div class="brandImage"></div>
         <!--<img class="logo" src="resources/graphic.jpeg">-->
-      <div class="brand1">
+      </div>
     </section>
 
     <section class="description">
-      <div class="info0">
+      <div class="info info0">
         <div class="what" id="what">
           <div class="what-info">
-            <p class="title-description">what is this?<p>
-            <p class="text-description">Data, Set, Go! is a hackathon that not only challenge the contestants to solve a real problem with different Data Science techniques, but also offers training and networking sessions.<p>
-            <p class="text-description">This is challenge was created for students who are into Data Science & Machine Learning and want to test their knowledge and learn more about this area, either through workshop sessions or through more informal contact with companies.<p>
+            <p class="title-description">what is this?</p>
+            <p class="text-description">Data, Set, Go! is a hackathon that not only challenge the contestants to solve a real problem with different Data Science techniques, but also offers training and networking sessions.</p>
+            <p class="text-description second-paragraph">This is challenge was created for students who are into Data Science & Machine Learning and want to test their knowledge and learn more about this area, either through workshop sessions or through more informal contact with companies.</p>
           </div>
-          <div class="what-img">
-          </div>
+          <div class="what-img"></div>
         </div>
       </div>
-      <div class="info1">
+      <div class="info info1">
         <div class="where" id="where">
-          <div id="map">
+          <div class="mapa" id="map">
             <script>
                 var map;
                 function initMap(){
@@ -72,35 +103,37 @@
               </script>
           </div>
           <div class="where-info">
-            <p class="title-description">when & where?<p>
-            <p class="text-description">This hackathon is happening on <span class"bold">25th</span> and <span class"bold">26th</span> of <span class"bold">April</span> and it takes place at <span class"bold">Department of Computer Engineering, University of Coimbra.</span><p>
-            <p class="text-description">A place that has ideal conditions for the dynamization of such a diverse event organized through various rooms, auditoriums and social spaces, to work and socialize throughout the event.<p>
+            <p class="title-description">when & where?</p>
+            <p class="text-description">This hackathon is happening on <span class"bold">25th</span> and <span class"bold">26th</span> of <span class"bold">April</span> and it takes place at <span class"bold">Department of Computer Engineering, University of Coimbra.</span></p>
+            <p class="text-description second-paragraph">A place that has ideal conditions for the dynamization of such a diverse event organized through various rooms, auditoriums and social spaces, to work and socialize throughout the event.</p>
           </div>
         </div>
       </div>
-      <div class="info2">
+      <div class="info info2">
         <div class="who" id="who">
-          <p class="title-description">who is organizing?<p>
-          <p class="text-description">jeKnowledge and JEST are collaborating for the first time on a project to develop an innovative and technological event on a modern and high impact theme. An event not to be missed!<p>
+          <p class="title-description">who is organizing?</p>
+          <p class="text-description second-paragraph1">jeKnowledge and JEST are collaborating for the first time on a project to develop an innovative and technological event on a modern and high impact theme. An event not to be missed!</p>
         </div>
       </div>
-      <div class="info3">
+      <div class="info info3">
         <div class="infoJE">
           <img class="logoJE" src="resources/logoJeK.svg">
           <p class="titleJE">jeKnowledge</p>
-          <p class="descJE">jeKnowledge is a FCTUC Junior Enterprise. We are 11 years old and we are a multidisciplinary team that wants the world and we are known to be different. Technology and Innovation is our area.</p>
+          <p class="desc descJE">jeKnowledge is a FCTUC Junior Enterprise. We are 11 years old and we are a multidisciplinary team that wants the world and we are known to be different. Technology and Innovation is our area.</p>
+          <p class="desc descJE_mobile">FCTUC Junior Company with 11 years old composed by an Innovation and Technology team.</p>
         </div>
         <div class="infoJE">
           <img class="logoJE" src="resources/logoJest.svg">
           <p class="titleJE">JEST</p>
-          <p class="descJE">JEST is a Junior Initiative focused on Data Science counting on the dynamism of its elements coming from 7 distinct FCTUC courses! Providing data-based solutions for life sciences.</p>
+          <p class="desc descJE">JEST is a Junior Initiative focused on Data Science counting on the dynamism of its elements coming from 7 distinct FCTUC courses! Providing data-based solutions for life sciences.</p>
+          <p class="desc descJE_mobile">Junior company focused on Data Science from 7 distinct FCTUC courses!</p>
         </div>
       </div>
     </section>
 
     <section class="questions" id="questions">
-      <div class="container">
-        <p class="faq">faq</p>
+      <div class="faq-container">
+        <p class="faq">questions</p>
         <div class="accordion">
           <div class="accordion-item">
             <a>who?</a>
@@ -120,31 +153,41 @@
 
 
     <section class="footer">
-      <div class="contacts">
-        <p class="title-footer">contacts</p>
-        <div class="contactJE">
-            <p class="text-footer">joao.tremoco@jeknowledge.com</p>
-            <p class="text-footer">+351 962 228 047</p>
-        </div>
-        <div class="contactJE">
-            <p class="text-footer">mariainesfonseca04@gmail.com</p>
-            <p class="text-footer">+351 919 301 198</p>
-        </div>
-      </div>
-      <div class="made-by">
-        <p class="title-footer">made by</p>
-        <div class="logoJE-footer">
-          <img class="logo-footer" src="resources/logoJeK.svg">
-          <img class="logo-footer" src="resources/logoJest.svg">
-        </div>
-        <p class="text-footer">Data Set Go 2020</p>
-      </div>
-      <div class="collaborating-with">
-        <p class="title-footer">collaborating with</p>
+        <div class="footer1">
+          <div class="contacts">
+            <div class="contacts1">
+                <p class="title-footer">contacts</p>
+                <div class="contactJE">
+                    <p class="text-footer">joao.tremoco@jeknowledge.com</p>
+                    <p class="text-footer">+351 962 228 047</p>
+                </div>
+
+              <div class="contactJE">
+                  <p class="text-footer">mariainesfonseca04@gmail.com</p>
+                  <p class="text-footer">+351 919 301 198</p>
+              </div>
+            </div>
+          </div>
+          <div class="made-by">
+            <div class="made-by1">
+              <p class="title-footer">made by</p>
+              <div class="logoJE-footer">
+                <img class="logo-footer" src="resources/logoJeK.svg">
+                <img class="logo-footer" src="resources/logoJest.svg">
+              </div>
+              <p class="text-footer">Data Set Go 2020</p>
+            </div>
+          </div>
+          <div class="collaborating-with">
+            <div class="collaborating-with1">
+              <p class="title-footer">collaborating with</p>
+            </div>
+          </div>
       </div>
     </section>
 
+    <script src="js/index.js"></script>
+    <script src="js/index1.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa0YG6U91t_xgpHKZ0b5zftde6CbwkquM&callback=initMap" async defer></script>
-    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
