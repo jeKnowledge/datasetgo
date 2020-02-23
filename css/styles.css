@@ -48,7 +48,7 @@ a:link {
 
 .brand {
   width: 100%;
-  height: 450px;
+  height: fit-content;
   display: flex;
   padding-top: 100px;
 }
@@ -122,11 +122,13 @@ a:link {
   border: 3px solid #5C55D5;
 }
 
+/*
 .bottomsBrand a:last-child{
   border: 3px solid #5C55D5;
   color: #5C55D5;
   background-color: #FFFFFF;
 }
+*/
 
 .brand a {
   font-size: 25px;
@@ -172,16 +174,16 @@ a:link {
 
 .info {
   margin-left: 125px;
-  margin-right: 125px;
+  margin-right: 140px;
 }
 
 .info0 {
   padding-top: 17rem;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
 
 .info1 {
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
 
 .info2 {
@@ -386,13 +388,59 @@ a:link {
   display: block;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 570px) {
+  .what-img {
+    margin: 0px 10px;
+    width: 100%;
+  }
+
   #map {
-    width: 100vw;
+    margin: 0px 10px;
+    width: 100%;
+  }
+
+  .info0 {
+    padding-bottom: 60px;
+  }
+
+  .info1 {
+    padding-bottom: 60px;
+  }
+
+  .desc{
+    font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 1025px) {
+  .titless{
+    width: fit-content;
+  }
+
+  .title {
+    font-size: 70px;
+  }
+
+  .subtitle {
+    font-size: 70px;
+  }
+
+  .date {
+    font-size: 25px;
+  }
+
+  .brand a {
+    font-size: 18px;
+  }
+
+  .title-description {
+    font-size: 40px;
+  }
+
+  .text-description {
+    font-size: 15px;
+  }
+
   .contactJE > p {
     margin-right: 0px;
   }
@@ -450,9 +498,6 @@ a:link {
 }
 
 @media only screen and (max-width: 1350px) {
-
-
-
   .second-paragraph {
     display: none;
   }
@@ -497,36 +542,15 @@ a:link {
   }
 }
 
-@media only screen and (max-width: 1242px) {
+@media only screen and (max-width: 1380px) {
   .info3 {
-    height: 450px;
+    height: 400px;
   }
+}
 
-
+@media only screen and (max-width: 1242px) {
   .infoJE {
     width: calc(1300px/5);
-  }
-}
-
-.navigation {
-  display: none;
-}
-
-.titless {
-  width: 500px;
-  padding-left: 140px;
-}
-
-@media only screen and (max-width: 890px) {
-  .second-paragraph1{
-    display: none;
-  }
-
-  .info3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 480px;
   }
 
   .descJE {
@@ -536,9 +560,30 @@ a:link {
   .descJE_mobile {
     display: block;
   }
+}
+
+.navigation {
+  display: none;
+}
+
+.titless {
+  padding-left: 140px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .second-paragraph1{
+    display: none;
+  }
+
+  .info3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+  }
 
   .logoJE {
-    height: 90px;
+    height: 70px;
   }
 
   .infoJE {
@@ -546,12 +591,15 @@ a:link {
   }
 
   .titleJE {
-    font-size: 23px;
+    font-size: 20px;
+  }
+
+  .desc {
+    font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 840px) {
-
   .navigation {
     display: block;
     position: fixed;
@@ -566,6 +614,23 @@ a:link {
     display: none;
   }
 
+  .brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  .brand1 {
+    width: fit-content;
+  }
+
+  .titless {
+    padding: 0px;
+  }
+
+  .brand1 > .bottomsBrand {
+    padding-left: 0px;
+  }
+/*
   .bottomsBrand {
     display: flex;
     flex-direction: column;
@@ -590,7 +655,7 @@ a:link {
 
   .titless {
     padding-left: 0px;
-  }
+  }*/
 }
 
 @media only screen and (max-width: 572px) {
@@ -601,8 +666,6 @@ a:link {
 }
 
 @media only screen and (max-width: 420px) {
-
-
   .brand {
     padding-top: 0px;
   }
