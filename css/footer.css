@@ -1,0 +1,69 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 4rem;
+  background-color: var(--purple);
+}
+
+.je-contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.je-contact:last-child {
+  margin-bottom: 0rem;
+}
+
+.je-contact p {
+  margin-right: 0.5rem;
+}
+
+.made-by {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.je-logo-footer {
+  margin-bottom: 0.5rem;
+}
+
+.je-logo-footer img {
+  height: 2.5rem;
+}
+
+.collab {
+  justify-self: end;
+}
+
+.title-footer {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-variant: small-caps;
+  line-height: 1.6rem;
+}
+
+.text-footer {
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+  }
+
+  .contacts,
+  .collab {
+    text-align: center;
+    justify-self: center;
+  }
+
+  .contacts p {
+    margin-right: 0rem;
+  }
+}
