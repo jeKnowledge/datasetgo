@@ -44,11 +44,16 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  /*new*/
+  align-items: center;
 }
 
 .info {
   width: 80%;
-  margin: 0 auto 8rem;
+  margin: 0 auto 2rem;
+  /*remove*/
+  /*margin: 0 auto 8rem;*/
 }
 
 .info:last-child {
@@ -64,12 +69,30 @@
 
 .what-info,
 .where-info,
-#map, .what-img {
+.what-img,
+.where-img {
   width: 45%;
 }
 
+/*new*/
+.what-info,
+.where-info,
+.who-info {
+  margin: 3rem auto 3rem;
+}
+
 .what-img {
-  background-image: url("../resources/image.png");
+  background-image: url("../resources/pcs.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.where-img {
+  background-image: url("../resources/dei.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .who-organizers {
@@ -104,6 +127,10 @@
   color: var(--grey);
 }
 
+.partner {
+  height: 2rem;
+}
+
 .menu-overflowY {
   overflow-y: hidden;
 }
@@ -115,14 +142,14 @@
 @media screen and (max-width: 1000px) {
 
   .what-img,
-  #map,
+  .where-img,
   .brand-image {
     display: none;
   }
 
   .what-info,
   .where-info,
-  #map {
+  .where-img {
     width: 100%;
   }
 
@@ -138,6 +165,12 @@
 
   .info {
     margin: 0rem auto 3rem;
+  }
+
+  .what-info,
+  .where-info,
+  .who-info {
+    margin: 0 auto 0;
   }
 
   .who-organizers {

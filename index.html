@@ -24,7 +24,7 @@
       <a href="#where">where</a>
       <a href="#where">when</a>
       <a href="#who">who</a>
-      <a href="#questions">faq</a>
+      <a href="#faq">faq</a>
       <a href="#">apply</a>
     </nav>
     <div class="menu-section">
@@ -33,12 +33,12 @@
         <div class="two"></div>
         <div class="three"></div>
       </div>
-      <ul class="hidden">
-        <li><a href="#what">what</a></li>
-        <li><a href="#where">where</a></li>
-        <li><a href="#where">when</a></li>
-        <li><a href="#who">who</a></li>
-        <li><a href="#questions">faq</a></li>
+      <ul class="hidden menu">
+        <li><a id="option1" href="#what">what</a></li>
+        <li><a id="option2" href="#where">where</a></li>
+        <li><a id="option3" href="#where">when</a></li>
+        <li><a id="option4" href="#who">who</a></li>
+        <li><a id="option5" href="#faq">faq</a></li>
       </ul>
     </div>
   </header>
@@ -68,7 +68,7 @@
       <div class="what-img"></div>
     </div>
     <div class="info where" id="where">
-      <div class="mapa" id="map"></div>
+      <div class="where-img"></div>
       <div class="where-info">
         <p class="title-description">when & where?</p>
         <p class="text-description">This hackathon is happening on <span>25th</span> and <span>26th</span> of
@@ -80,7 +80,7 @@
       </div>
     </div>
     <div class="info who" id="who">
-      <div>
+      <div class="who-info">
         <p class="title-description">who is organizing?</p>
         <p class="text-description">jeKnowledge and JEST are collaborating for the first time on a project to develop an
           innovative and technological event on a modern and high impact theme. An event not to be missed!</p>
@@ -103,24 +103,19 @@
     </div>
   </section>
 
-  <section class="questions" id="questions">
+  <section class="questions" id="faq">
     <p class="faq">questions</p>
     <div class="accordion">
       <div class="accordion-item">
         <a>who?</a>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
-          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
         </div>
       </div>
       <div class="accordion-item">
         <a>where?</a>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.
-          </p>
-        </div>
+          </div>
       </div>
     </div>
   </section>
@@ -147,34 +142,17 @@
     </div>
     <div class="collab">
       <p class="title-footer">collaborating with</p>
+      <div class="partners">
+        <img class="partner" src="resources/deloitte.png">
+      </div>
     </div>
   </footer>
 </body>
 
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa0YG6U91t_xgpHKZ0b5zftde6CbwkquM&callback=initMap" async defer></script>
 <script src="js/accordion.js"></script>
-<script>
-  var map;
-
-  function initMap() {
-
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: new google.maps.LatLng(40.185937, -8.415614, 17),
-      zoom: 13,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-    });
-
-    var infoWindow = new google.maps.InfoWindow();
-
-    var marker;
-    marker = new google.maps.Marker({
-      position: new google.maps.LatLng(40.185937, -8.415614, 17),
-      map: map
-    });
-  }
-</script>
+<script src="js/navbar.js"></script>
 <script>
   $(".menu-toggle").on('click', function () {
     $(this).toggleClass("on");
