@@ -50,6 +50,16 @@ footer {
   line-height: 1.2rem;
 }
 
+.partners {
+  width: fit-content;
+}
+
+
+.partner {
+  height: 2rem;
+}
+
+
 @media screen and (max-width: 768px) {
   footer {
     grid-template-rows: repeat(3, 1fr);

@@ -127,10 +127,6 @@
   color: var(--grey);
 }
 
-.partner {
-  height: 2rem;
-}
-
 .menu-overflowY {
   overflow-y: hidden;
 }
