@@ -52,9 +52,8 @@ footer {
 
 .partners {
   width: 79px;
-  height: auto;
+  margin-left: auto;
 }
-
 
 .partner {
   width: 100%;
@@ -77,4 +76,9 @@ footer {
   .contacts p {
     margin-right: 0rem;
   }
+
+  .partners {
+    margin: auto;
+  }
+
 }
