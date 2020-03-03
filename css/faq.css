@@ -19,7 +19,16 @@
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
-.accordion-item a {
+.link-faq a {
+  display: none;
+  flex-direction: none;
+  padding: 0rem 0rem;
+  line-height: 0rem;
+  cursor: none;
+}
+
+
+.accordion-a {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
@@ -27,6 +36,8 @@
   line-height: 1.5rem;
   cursor: pointer;
 }
+
+
 
 .accordion .content {
   opacity: 0;
