@@ -1,6 +1,11 @@
 .questions {
+  min-height: 20rem;
+  height: 20rem;
   width: 80%;
-  margin: 0rem auto 5rem;
+  margin: 0rem auto 15%; /* margin bottom tem que ser igual ou parecido ao tamanho do footer*/
+}
+.accordion-total {
+  margin-top: 24rem;
 }
 
 .faq {
@@ -11,49 +16,19 @@
   line-height: 3rem;
 }
 
-.accordion-item {
+.accordion {
+  display: inline-flex;
+  flex-direction: row;
   z-index: 1;
-  margin-bottom: 0.5rem;
-  border-radius: 1.5rem;
-  background: var(--purple);
+  margin-bottom: 1.8rem;
+  border-radius: 1.1rem;
+  background: var(--green);
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
+  min-height: 1.2rem;
+  width: 100%;
 }
 
-.link-faq a {
-  display: none;
-  flex-direction: none;
-  padding: 0rem 0rem;
-  line-height: 0rem;
-  cursor: none;
-}
-
-
-.accordion-a {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  cursor: pointer;
-}
-
-
-
-.accordion .content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  clear: both;
-  -webkit-transition: all 0.2s ease 0.15s;
-  -o-transition: all 0.2s ease 0.15s;
-  transition: all 0.2s ease 0.15s;
-}
-
-.accordion .content.active {
-  opacity: 1;
-  padding: 0.5rem 3rem 1rem;
-  max-height: 100%;
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
+.active,
+.accordion:hover {
+  background-color: rgb(207, 248, 186) 279;
 }
