@@ -2,7 +2,7 @@
   min-height: 20rem;
   height: 25rem;
   width: 80%;
-  margin: 0rem auto 15%; /* margin bottom tem que ser igual ou parecido ao tamanho do footer*/
+  margin: 0rem auto 20%; /* margin bottom tem que ser igual ou parecido ao tamanho do footer*/
 }
 
 /*font-size la de dentro*/
@@ -14,6 +14,7 @@
   display: flex;
   width: 100%;
   flex-direction: row;
+  margin-top: 0.5rem;
   justify-content: space-between;
 }
 
@@ -40,7 +41,7 @@
 .accordion a {
   display: flex;
   flex-direction: column;
-  padding: 1.75rem 2rem 0.2rem;
+  padding: 1.55rem 2rem 0.2rem;
   font-size: 1.8rem;
   line-height: 0rem;
 }
@@ -50,13 +51,24 @@
   overflow: hidden;
   padding-left: 4rem;
   padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .setadown {
   margin-right: 2rem;
+  transition: 0.4s ease-in-out;
 }
 
 /*when click*/
-.accordion.active.content {
+.accordion.active .content {
   display: flex;
+  flex-direction: column;
+}
+
+.accordion.active {
+  background: transparent;
+}
+
+.accordion.active .setadown {
+  transform: rotate(-180deg);
 }
