@@ -1,34 +1,62 @@
 .questions {
   min-height: 20rem;
-  height: 20rem;
+  height: 25rem;
   width: 80%;
   margin: 0rem auto 15%; /* margin bottom tem que ser igual ou parecido ao tamanho do footer*/
 }
-.accordion-total {
-  margin-top: 24rem;
+
+/*font-size la de dentro*/
+.content p {
+  font-size: 1.5rem;
 }
 
-.faq {
-  padding-bottom: 2rem;
-  color: var(--purple);
-  font-size: 2rem;
-  font-variant: small-caps;
-  line-height: 3rem;
-}
-
-.accordion {
-  display: inline-flex;
+.firstline {
+  display: flex;
+  width: 100%;
   flex-direction: row;
-  z-index: 1;
+  justify-content: space-between;
+}
+
+/*acordião dentro*/
+.accordion {
+  cursor: pointer;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 1.8rem;
+  border: 0.3rem solid var(--green);
   border-radius: 1.1rem;
   background: var(--green);
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
   min-height: 1.2rem;
+  outline: none;
   width: 100%;
 }
 
-.active,
 .accordion:hover {
-  background-color: rgb(207, 248, 186) 279;
+  background-color: rgb(155, 252, 106) 279;
+}
+.accordion a {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 2rem 0.2rem;
+  font-size: 1.8rem;
+  line-height: 0rem;
+}
+/*texto la dentro*/
+.content {
+  display: none;
+  overflow: hidden;
+  padding-left: 4rem;
+  padding-top: 1.5rem;
+}
+
+.setadown {
+  margin-right: 2rem;
+}
+
+/*when click*/
+.accordion.active.content {
+  display: flex;
 }
