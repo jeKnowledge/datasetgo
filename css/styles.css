@@ -21,9 +21,9 @@ body {
 
 .brand-links {
   padding: 0.5rem 1rem;
-  border: 0.25rem solid var(--purple);
+  border: 0.25rem solid var(--green);
   border-radius: 2rem;
-  background-color: var(--purple);
+  background-color: var(--green);
   letter-spacing: 0.05em;
   font-size: 1.5rem;
   font-variant: small-caps;
@@ -125,7 +125,7 @@ body {
 
 .je-desc {
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 2.5rem;
   color: var(--white);
 }
@@ -148,7 +148,9 @@ body {
   .what-info,
   .where-info,
   .where-img {
-    width: 100%;
+    width: 80%;
+    text-align: left;
+    margin-left: 4rem;
   }
 
   .je-info {
@@ -156,20 +158,44 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .brand {
-    margin: 6rem auto 0rem;
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .info {
-    margin: 0rem auto 3rem;
+  .where {
+    width: 90%;
+    height: 100%;
   }
 
-  .what-info,
-  .where-info,
-  .who-info {
-    margin: 0 auto 0;
+  .title-description {
+    line-height: 2.2rem;
+  }
+  .text-description {
+    line-height: 1.8rem;
+  }
+
+  .je-desc {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
+  .description {
+    min-height: 120rem;
+    height: 120rem;
+    align-items: flex-start;
+  }
+
+  .imgContainer {
+    width: 95%;
+    height: auto;
+  }
+
+  .brand-info {
+    margin-top: 5rem;
+    width: 90%;
   }
 
   .who-organizers {
@@ -184,10 +210,29 @@ body {
   .je-info:first-child {
     margin-bottom: 2rem;
   }
+
+  .firstline {
+    overflow: visible;
+    height: 100%;
+  }
+  .firstline a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .accordion {
+    overflow: visible;
+    height: auto;
+    border: 0.4rem solid var(--green);
+    min-height: 1.2rem;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 330px) {
   .description {
     min-height: 160rem;
+    height: 160rem;
   }
 }

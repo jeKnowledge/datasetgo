@@ -9,9 +9,10 @@ header {
 .headerimg {
   height: auto;
   width: auto;
-  max-width: 10%;
+  max-width: 170px;
   max-height: 200px;
   margin-left: 4em;
+  margin-top: 0rem;
 }
 
 header > img {
@@ -58,6 +59,11 @@ nav a:last-child:hover {
 }
 
 @media screen and (max-width: 1000px) {
+  .headerimg {
+    max-width: 170px;
+    margin-top: 1rem;
+  }
+
   header > img {
     height: 2rem;
   }
@@ -102,6 +108,7 @@ nav a:last-child:hover {
     height: 5px;
     background-color: var(--greendois);
     margin: 6px auto;
+    border-radius: 2rem;
     backface-visibility: hidden;
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
@@ -135,11 +142,6 @@ nav a:last-child:hover {
     transition-duration: 0.5s;
   }
 
-  /*
-  header ul a:hover {
-    text-decoration: underline;
-  }
-*/
   .menu-section.on {
     z-index: 10;
     width: 100%;
