@@ -46,9 +46,9 @@ html {
 
 .text-description {
   font-size: 1.75rem;
-  font-weight: 600;
-  line-height: 2.5rem;
+  font-weight: 100;
   padding-bottom: 1rem;
+  line-height: 1.8rem;
   margin-top: 1.5rem;
 }
 

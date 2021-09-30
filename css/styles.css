@@ -77,7 +77,7 @@ body {
 }
 
 .where-info {
-  width: 80%;
+  width: 75%;
   text-align: right;
   margin-top: 23%; /*dont change, para o ecrã ficar centrado com a anchor*/
 }
@@ -142,18 +142,22 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .what-img,
-  .where-img,
-  .brand-image {
-    display: none;
-  }
-
-  .what-info,
-  .where-info,
-  .where-img {
+  .where-info {
+    margin-top: 2rem;
+    margin-left: 2rem;
     width: 80%;
     text-align: left;
-    margin-left: 4rem;
+  }
+  .where-img {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .where-img img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: auto;
+    width: 75%;
   }
 
   .je-info {
@@ -169,15 +173,11 @@ body {
   }
 
   .where {
-    width: 90%;
-    height: 100%;
+    width: 100%;
   }
 
   .title-description {
     line-height: 2.2rem;
-  }
-  .text-description {
-    line-height: 1.8rem;
   }
 
   .je-desc {
