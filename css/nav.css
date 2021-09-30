@@ -1,18 +1,30 @@
 header {
-  width: 95%;
+  width: 100%;
   display: inline-flex;
   position: fixed;
   justify-content: space-between;
-  top: 3rem;
+  /*-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);*/
+  transition: all 0.2s ease-in-out;
+  z-index: 10000;
+  top: 0rem;
+  height: 5rem;
+}
+
+nav {
+  margin-right: 1.5rem;
+}
+
+.acti {
+  background-color: rgb(46, 46, 46);
 }
 
 .headerimg {
-  height: auto;
-  width: auto;
   max-width: 170px;
   max-height: 200px;
   margin-left: 4em;
-  margin-top: 0rem;
+  margin-top: 1rem;
 }
 
 header > img {
@@ -20,7 +32,7 @@ header > img {
 }
 
 header nav {
-  margin-top: 1.35em;
+  margin-top: 2rem;
 }
 
 nav a {
@@ -61,7 +73,8 @@ nav a:last-child:hover {
 @media screen and (max-width: 1000px) {
   .headerimg {
     max-width: 170px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
   }
 
   header > img {

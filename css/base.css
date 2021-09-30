@@ -1,12 +1,8 @@
-@font-face {
-  font-family: "Avenir Next";
-  src: url("../font/Avenir Next.ttc");
-}
 * {
   margin: 0;
-  font-family: "Avenir Next";
-  font-style: initial;
+  font-family: muli, sans-serif;
   font-weight: normal;
+
   color: var(--white);
 }
 
@@ -15,16 +11,20 @@ html {
 }
 
 .title {
-  font-size: 2.9rem;
+  font-family: muli, sans-serif;
+  font-size: 3.5rem;
   font-style: normal;
   line-height: 123%;
+  font-weight: bold;
   color: var(--white);
+  text-transform: capitalize;
 }
 
 .subtitle {
   font-weight: 100%;
   color: var(--green);
   margin-top: 4rem;
+  text-transform: capitalize;
 }
 
 .date {
@@ -40,6 +40,7 @@ html {
   font-size: 3.3rem;
   font-variant: small-caps;
   line-height: 3.5rem;
+  font-weight: bold;
   padding-bottom: 1rem;
 }
 

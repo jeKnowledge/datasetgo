@@ -41,9 +41,10 @@
 .accordion a {
   display: flex;
   flex-direction: column;
-  padding: 1.55rem 2rem 0.2rem;
-  font-size: 1.8rem;
+  padding: 1.5rem 2rem 0.1rem;
+  font-size: 1.75rem;
   line-height: 0rem;
+  font-weight: 700;
 }
 /*texto la dentro*/
 .content {
