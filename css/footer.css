@@ -4,7 +4,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 5%;
+  height: 13%;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem 4rem;
   background-color: var(--green);
@@ -13,7 +13,7 @@ footer {
 .je-contact {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 
 .je-contact:last-child {
@@ -40,28 +40,46 @@ footer {
 
 .collab {
   justify-self: end;
+  width: 65%;
 }
 
 .title-footer {
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
+  font-size: 2rem;
   font-variant: small-caps;
   line-height: 1.6rem;
 }
 
 .text-footer {
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.2rem;
 }
 
 .partners {
-  width: 79px;
-  margin-left: auto;
+  width: 83px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.middlerow {
+  display: flex;
+  margin-top: 0.5rem;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
 }
 
 .partner {
-  width: 100%;
+  width: 83px;
+  margin-right: 0;
+}
+
+.lastrow {
+  margin-top: 1.5rem;
+  width: 50%;
 }
 
 @media screen and (max-width: 768px) {

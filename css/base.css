@@ -1,7 +1,6 @@
 * {
   margin: 0;
   font-family: muli, sans-serif;
-  font-weight: normal;
 
   color: var(--white);
 }
@@ -12,7 +11,7 @@ html {
 
 .title {
   font-family: muli, sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-style: normal;
   line-height: 123%;
   font-weight: bold;
@@ -23,7 +22,7 @@ html {
 .subtitle {
   font-weight: 100%;
   color: var(--green);
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   text-transform: capitalize;
 }
 
