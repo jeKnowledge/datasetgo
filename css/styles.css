@@ -1,19 +1,31 @@
-.brand {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  margin: 8rem auto 0rem;
+body {
+  background-color: var(--black);
+  background-image: url("../resources/bg.png");
+  background-size: contain;
+  height: 100%;
 }
 
-.brand-info>div {
+.brand {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  margin: 8em auto 3rem;
+}
+
+.brand-info {
+  margin-top: 5.5rem;
+  width: 40%;
+}
+
+.brand-info > div {
   margin-bottom: 3rem;
 }
 
 .brand-links {
   padding: 0.5rem 1rem;
-  border: 0.25rem solid var(--purple);
+  border: 0.25rem solid var(--green);
   border-radius: 2rem;
-  background-color: var(--purple);
+  background-color: var(--green);
   letter-spacing: 0.05em;
   font-size: 1.5rem;
   font-variant: small-caps;
@@ -26,57 +38,51 @@
   color: var(--grey);
 }
 
-.brand-image {
-  width: 50%;
-  height: 550px;
-  background-image: url("../resources/graphic.jpeg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.imgContainer {
+  width: 34.5%;
+  height: auto;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .description {
-  min-height: 150rem;
+  min-height: 98rem;
+  height: 98rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-image: url("../resources/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /*new*/
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20rem;
 }
 
-.info {
-  width: 80%;
-  margin: 0 auto 2rem;
-  /*remove*/
-  /*margin: 0 auto 8rem;*/
+.where {
+  width: 55%;
+  height: 100%;
 }
 
-.info:last-child {
-  margin: 0 auto;
+.who {
+  width: 100%;
+  margin-top: 2rem;
 }
-
 .what,
-.where,
 .who-organizers {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  padding-top: 10rem;
+  display: inline-flex;
+  justify-content: space-evenly;
 }
 
-.what-info,
-.where-info,
-.what-img,
-.where-img {
-  width: 45%;
+.where-info {
+  width: 75%;
+  text-align: right;
+  margin-top: 23%; /*dont change, para o ecrã ficar centrado com a anchor*/
 }
-
 /*new*/
 .what-info,
-.where-info,
 .who-info {
   margin: 3rem auto 3rem;
 }
@@ -89,42 +95,42 @@
 }
 
 .where-img {
-  background-image: url("../resources/dei.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
+  width: 100%;
+  z-index: -1;
 }
-
-.who-organizers {
-  justify-content: space-around;
-  margin-top: 5rem;
+.where-img img {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: auto;
+  width: 54%;
 }
 
 .je-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100vw/4);
-  background-color: var(--white);
+  width: calc(100vw / 4);
   padding: 1.5rem;
-  border-radius: 1.5rem;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .je-logo {
-  height: 8rem;
+  height: 13rem;
 }
 
 .je-title {
   margin: 2rem 0rem;
   font-size: 2rem;
-  color: var(--purple);
+  color: var(--white);
 }
 
 .je-desc {
   font-weight: normal;
-  font-size: 1rem;
-  color: var(--grey);
+  font-size: 0.9rem;
+  margin-top: 2.5rem;
+  color: var(--white);
+  text-align: center;
 }
 
 .menu-overflowY {
@@ -136,37 +142,63 @@
 }
 
 @media screen and (max-width: 1000px) {
-
-  .what-img,
-  .where-img,
-  .brand-image {
-    display: none;
+  .where-info {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 80%;
+    text-align: left;
   }
-
-  .what-info,
-  .where-info,
   .where-img {
-    width: 100%;
+    margin-left: 0rem;
+    margin-top: 3.5rem;
+  }
+  .where-img img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: auto;
+    width: 75%;
   }
 
   .je-info {
-    width: calc(100vw/3.5);
+    width: calc(100vw / 3.5);
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .brand {
-    margin: 6rem auto 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .info {
-    margin: 0rem auto 3rem;
+  .where {
+    width: 100%;
   }
 
-  .what-info,
-  .where-info,
-  .who-info {
-    margin: 0 auto 0;
+  .title-description {
+    line-height: 2.2rem;
+  }
+
+  .je-desc {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
+  .description {
+    min-height: 120rem;
+    height: 120rem;
+    align-items: flex-start;
+  }
+
+  .imgContainer {
+    width: 95%;
+    height: auto;
+  }
+
+  .brand-info {
+    margin-top: 5rem;
+    width: 90%;
   }
 
   .who-organizers {
@@ -181,10 +213,32 @@
   .je-info:first-child {
     margin-bottom: 2rem;
   }
+
+  .firstline {
+    overflow: visible;
+
+    height: 100%;
+  }
+
+  .firstline a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .accordion {
+    overflow: visible;
+    height: auto;
+    border: 0.4rem solid var(--green);
+    min-height: 1.2rem;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 330px) {
   .description {
     min-height: 160rem;
+    height: 160rem;
   }
 }

@@ -1,59 +1,75 @@
 .questions {
+  min-height: 20rem;
+  height: 25rem;
   width: 80%;
-  margin: 0rem auto 5rem;
+  margin: 0rem auto 20%; /* margin bottom tem que ser igual ou parecido ao tamanho do footer*/
 }
 
-.faq {
-  padding-bottom: 2rem;
-  color: var(--purple);
-  font-size: 2rem;
-  font-variant: small-caps;
-  line-height: 3rem;
+/*font-size la de dentro*/
+.content p {
+  font-size: 1.5rem;
 }
 
-.accordion-item {
-  z-index: 1;
-  margin-bottom: 0.5rem;
-  border-radius: 1.5rem;
-  background: var(--purple);
+.firstline {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+
+/*acordião dentro*/
+.accordion {
+  cursor: pointer;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+  border: 0.4rem solid var(--green);
+  border-radius: 1.1rem;
+  background: var(--green);
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
+  min-height: 1.2rem;
+  outline: none;
+  width: 100%;
 }
 
-.link-faq a {
-  display: none;
-  flex-direction: none;
-  padding: 0rem 0rem;
-  line-height: 0rem;
-  cursor: none;
+.accordion:hover {
+  background-color: rgb(155, 252, 106) 279;
 }
-
-
-.accordion-a {
+.accordion a {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  cursor: pointer;
+  padding: 1.5rem 2rem 0.1rem;
+  font-size: 1.75rem;
+  line-height: 0rem;
+  font-weight: 700;
 }
-
-
-
-.accordion .content {
-  opacity: 0;
-  max-height: 0;
+/*texto la dentro*/
+.content {
+  display: none;
   overflow: hidden;
-  clear: both;
-  -webkit-transition: all 0.2s ease 0.15s;
-  -o-transition: all 0.2s ease 0.15s;
-  transition: all 0.2s ease 0.15s;
+  padding-left: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 
-.accordion .content.active {
-  opacity: 1;
-  padding: 0.5rem 3rem 1rem;
-  max-height: 100%;
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
+.setadown {
+  margin-right: 2rem;
+  transition: 0.4s ease-in-out;
+}
+
+/*when click*/
+.accordion.active .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion.active {
+  background: transparent;
+}
+
+.accordion.active .setadown {
+  transform: rotate(-180deg);
 }

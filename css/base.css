@@ -1,8 +1,7 @@
 * {
   margin: 0;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  font-family: muli, sans-serif;
+
   color: var(--white);
 }
 
@@ -11,13 +10,20 @@ html {
 }
 
 .title {
-  font-size: 5rem;
-  line-height: 7rem;
-  color: var(--purple);
+  font-family: muli, sans-serif;
+  font-size: 3.2rem;
+  font-style: normal;
+  line-height: 123%;
+  font-weight: bold;
+  color: var(--white);
+  text-transform: capitalize;
 }
 
 .subtitle {
-  font-weight: 400;
+  font-weight: 100%;
+  color: var(--green);
+  margin-top: 2.5rem;
+  text-transform: capitalize;
 }
 
 .date {
@@ -30,20 +36,22 @@ html {
 }
 
 .title-description {
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-variant: small-caps;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: bold;
   padding-bottom: 1rem;
 }
 
 .text-description {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 100;
   padding-bottom: 1rem;
+  line-height: 1.8rem;
+  margin-top: 1.5rem;
 }
 
-.text-description>span {
+.text-description > span {
   font-weight: bold;
 }
 
@@ -51,10 +59,10 @@ html {
   padding-bottom: 0rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .title {
     font-size: 3rem;
-    line-height: 4rem;
+    line-height: 3.5rem;
   }
 
   .date {
@@ -65,5 +73,10 @@ html {
   .title-description {
     font-size: 2rem;
     line-height: 1.5rem;
+  }
+
+  .subtitle {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
   }
 }
