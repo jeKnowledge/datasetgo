@@ -36,6 +36,7 @@ html {
 }
 
 .title-locationTEXT {
+  text-transform: capitalize;
   font-size: 5vh;
   font-variant: small-caps;
   line-height: 3rem;
