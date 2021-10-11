@@ -35,6 +35,21 @@ html {
   color: var(--grey);
 }
 
+.title-locationTEXT {
+  font-size: 5vh;
+  font-variant: small-caps;
+  line-height: 3rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
+  color: var(--greendois);
+  width: 20%;
+  margin-left: 2rem;
+}
+.title-location {
+  display: none;
+  width: 100%;
+}
+
 .title-description {
   font-size: 3.3rem;
   font-variant: small-caps;
@@ -60,6 +75,12 @@ html {
 }
 
 @media screen and (max-width: 1000px) {
+  .title-location {
+    display: block;
+
+    text-align: start;
+  }
+
   .title {
     font-size: 3rem;
     line-height: 3.5rem;

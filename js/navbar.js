@@ -28,6 +28,13 @@ $("#option5").click(function () {
   $(".menu").addClass("hidden");
 });
 
+if ($(window).scrollTop() > 500 && $(window).width() < 1000) {
+  $("footer").addClass("hdfooter");
+} else {
+  //remove the background property so it comes transparent again (defined in your css)
+  $("footer").removeClass("hdfooter");
+}
+
 $(function () {
   $(window).on("scroll", function () {
     console.log($(window).scrollTop());
@@ -36,6 +43,13 @@ $(function () {
     } else {
       //remove the background property so it comes transparent again (defined in your css)
       $("header").removeClass("acti");
+    }
+
+    if ($(window).scrollTop() > 500 && $(window).width() < 1000) {
+      $("footer").addClass("hdfooter");
+    } else {
+      //remove the background property so it comes transparent again (defined in your css)
+      $("footer").removeClass("hdfooter");
     }
   });
 });

@@ -1,6 +1,6 @@
 .questions {
-  min-height: 20rem;
-  height: 25rem;
+  min-height: 32rem;
+  height: 100%;
   width: 80%;
   margin: 0rem auto 20%; /* margin bottom tem que ser igual ou parecido ao tamanho do footer*/
 }
@@ -16,6 +16,10 @@
   flex-direction: row;
   margin-top: 0.5rem;
   justify-content: space-between;
+  overflow: visible;
+  z-index: 1;
+  margin-bottom: 1rem;
+  height: fit-content;
 }
 
 /*acordião dentro*/
@@ -27,12 +31,19 @@
   justify-content: space-between;
   margin-bottom: 1.8rem;
   border: 0.4rem solid var(--green);
-  border-radius: 1.1rem;
+  border-radius: 1.3rem;
   background: var(--green);
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
-  min-height: 1.2rem;
+
   outline: none;
+  overflow: visible;
   width: 100%;
+  height: fit-content;
+}
+
+.accordion-total {
+  height: 100%;
+  margin-bottom: 4rem;
 }
 
 .accordion:hover {
@@ -49,8 +60,8 @@
 /*texto la dentro*/
 .content {
   display: none;
-  overflow: hidden;
   padding-left: 4rem;
+  padding-right: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
