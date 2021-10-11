@@ -13,7 +13,7 @@ body {
 }
 
 .brand-info {
-  margin-top: 4rem;
+  margin-top: 6rem;
   width: 40%;
 }
 
@@ -28,7 +28,6 @@ body {
   background-color: var(--green);
   letter-spacing: 0.05em;
   font-size: 1.5rem;
-  font-variant: small-caps;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
@@ -77,7 +76,7 @@ body {
 }
 
 .where-info {
-  width: 75%;
+  width: 85%;
   text-align: right;
   margin-top: 23%; /*dont change, para o ecrã ficar centrado com a anchor*/
 }
@@ -130,7 +129,7 @@ body {
   font-size: 0.9rem;
   margin-top: 2.5rem;
   color: var(--white);
-  text-align: center;
+  text-align: left;
 }
 
 .menu-overflowY {
@@ -156,7 +155,7 @@ body {
   .where-img img {
     position: absolute;
     height: auto;
-    width: 70%;
+    width: 80%;
   }
 
   .je-info {
@@ -180,13 +179,13 @@ body {
   }
 
   .je-desc {
-    text-align: center;
     margin-top: 1.2rem;
+    width: 80%;
   }
 
   .description {
-    min-height: 130rem;
-    height: 120rem;
+    min-height: 140rem;
+    height: 140rem;
     align-items: flex-start;
   }
 
@@ -224,8 +223,8 @@ body {
     overflow: visible;
     text-overflow: clip;
     white-space: pre-wrap;
-    font-weight: 800;
-    line-height: 150%;
+    font-weight: 600;
+    line-height: 130%;
     margin-top: 0rem;
   }
 
