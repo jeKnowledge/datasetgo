@@ -45,11 +45,18 @@ $(function () {
       $("header").removeClass("acti");
     }
 
-    if ($(window).scrollTop() > 500 && $(window).width() < 1000) {
-      $("footer").addClass("hdfooter");
-    } else {
-      //remove the background property so it comes transparent again (defined in your css)
-      $("footer").removeClass("hdfooter");
+    if (!($(window).scrollTop() > 500 && $(window).width() < 1000)) {
+      $("footer").addClass("showfooter");
+    }
+    if ($(window).scrollTop() > 2411) {
+      $("footer").addClass("showfooter");
+    }
+    if ($(window).scrollTop() < 2243) {
+      $("footer").removeClass("showfooter");
+    }
+
+    if ($(window).scrollTop() < 3468 && $(window).width() < 1000) {
+      $("footer").removeClass("showfooter");
     }
   });
 });
