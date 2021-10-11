@@ -4,9 +4,9 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 13%;
+  height: 7rem;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   background-color: var(--green);
   z-index: 10;
 }
@@ -48,12 +48,14 @@ footer {
 
 .collab {
   justify-self: end;
-  width: 65%;
+  width: 70%;
 }
 
 .title-footer {
   margin-bottom: 0.9rem;
   font-size: 2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-variant: small-caps;
   line-height: 1.6rem;
 }
