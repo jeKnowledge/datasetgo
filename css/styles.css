@@ -55,7 +55,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
 }
 
 .where {
@@ -224,7 +224,7 @@ body {
     text-overflow: clip;
     white-space: pre-wrap;
     font-weight: 600;
-    line-height: 130%;
+    line-height: 150%;
     margin-top: 0rem;
   }
 
