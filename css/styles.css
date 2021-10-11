@@ -13,7 +13,7 @@ body {
 }
 
 .brand-info {
-  margin-top: 5.5rem;
+  margin-top: 6rem;
   width: 40%;
 }
 
@@ -66,12 +66,12 @@ body {
 
 .who {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .what,
 .who-organizers {
   width: 100%;
-  padding-top: 10rem;
+
   display: inline-flex;
   justify-content: space-evenly;
 }
@@ -143,21 +143,20 @@ body {
 
 @media screen and (max-width: 1000px) {
   .where-info {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-left: 2rem;
     width: 80%;
     text-align: left;
   }
   .where-img {
     margin-left: 0rem;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
+    bottom: 0px;
   }
   .where-img img {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
     height: auto;
-    width: 75%;
+    width: 70%;
   }
 
   .je-info {
@@ -186,7 +185,7 @@ body {
   }
 
   .description {
-    min-height: 120rem;
+    min-height: 130rem;
     height: 120rem;
     align-items: flex-start;
   }
@@ -216,15 +215,15 @@ body {
 
   .firstline {
     overflow: visible;
-
+    overflow-wrap: break-word;
     height: 100%;
   }
 
   .firstline a {
-    text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: visible;
+    overflow-wrap: break-word;
     font-weight: 800;
-    white-space: nowrap;
+    word-break: break-all;
   }
 
   .accordion {
@@ -236,9 +235,8 @@ body {
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 310px) {
   .description {
-    min-height: 160rem;
-    height: 160rem;
+    min-height: 145rem;
   }
 }
