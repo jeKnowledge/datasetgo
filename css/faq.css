@@ -14,7 +14,7 @@
   display: flex;
   width: 100%;
   flex-direction: row;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   justify-content: space-between;
   overflow: visible;
   z-index: 1;
@@ -22,6 +22,11 @@
   height: fit-content;
   min-width: 0;
   min-height: 0;
+  line-height: 150%;
+}
+
+.firstline a {
+  line-height: 150%;
 }
 
 /*acordião dentro*/
